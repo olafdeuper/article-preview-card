@@ -1,0 +1,142 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  --accent-lila: darkslateblue;
+  --accent-orange: darkorange;
+}
+
+.maincontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardcontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+  border: 0.125rem solid black;
+  border-radius: 0.75rem;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.headerimage {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  max-width: 19rem;
+  max-height: 8rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.usercontainer {
+  _width: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  _border: 1px solid aqua;
+  color: grey;
+  font-size: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.tagcontainer {
+  display: flex;
+  _border: 1px solid blue;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+}
+
+.headeravatar {
+  width: 1.75rem;
+  aspect-ratio: 1;
+  border-width: 0.15rem;
+  border-style: solid;
+  border-radius: 1rem;
+  margin-left: auto;
+}
+
+.headerdate {
+  justify-self: flex-start;
+}
+
+.headername {
+  padding-left: 0.8rem;
+}
+
+.tags {
+  background-color: deepskyblue;
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.2rem;
+  border-radius: 0.7rem;
+}
+
+.cardmain {
+  margin-top: 1.25rem;
+}
+
+.mainheader {
+  _font-weight: bold;
+}
+
+.maintext {
+  margin-top: 1rem;
+}
+
+.cardfooter {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  align-self: flex-start;
+}
+
+.readlink {
+  padding: 0.4rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+#imglian {
+  border-color: var(--accent-lila);
+}
+
+#imgrailey {
+  border-color: var(--accent-orange);
+}
+
+#cardlian {
+  box-shadow: 0.5rem 0.5rem var(--accent-lila);
+}
+
+#cardlian > footer > a {
+  background-color: var(--accent-lila);
+}
+
+#cardrailey {
+  box-shadow: 0.5rem 0.5rem var(--accent-orange);
+}
+
+#cardrailey > footer > a {
+  background-color: var(--accent-orange);
+}
